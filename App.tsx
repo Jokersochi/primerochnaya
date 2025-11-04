@@ -33,7 +33,7 @@ const useMediaQuery = (query: string): boolean => {
     const mediaQueryList = window.matchMedia(query);
     const listener = (event: MediaQueryListEvent) => setMatches(event.matches);
 
-    // DEPRECATED: mediaQueryList.addListener(listener);
+
     mediaQueryList.addEventListener('change', listener);
     
     // Check again on mount in case it changed between initial state and effect runs
@@ -42,7 +42,7 @@ const useMediaQuery = (query: string): boolean => {
     }
 
     return () => {
-      // DEPRECATED: mediaQueryList.removeListener(listener);
+  
       mediaQueryList.removeEventListener('change', listener);
     };
   }, [query, matches]);
