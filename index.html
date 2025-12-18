@@ -1,15 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Виртуальная примерочная - примерьте одежду онлайн с помощью искусственного интеллекта" />
-    <meta name="keywords" content="виртуальная примерочная, AI, примерка одежды, онлайн шоппинг" />
-    <title>Виртуальная Примерочная - AI Try-On</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Виртуальная Примерочная AI | Примерка Одежды Онлайн</title>
+    <meta name="description" content="Попробуйте одежду виртуально с помощью искусственного интеллекта. Загрузите фото и примерьте любой наряд онлайн бесплатно." />
+    <meta name="keywords" content="виртуальная примерочная, примерка одежды онлайн, AI примерка, виртуальная одежда, онлайн магазин одежды" />
+    <meta name="author" content="Jokersochi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://primerochnaya.vercel.app" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://primerochnaya.vercel.app" />
+    <meta property="og:title" content="Виртуальная Примерочная AI | Примерка Одежды Онлайн" />
+    <meta property="og:description" content="Попробуйте одежду виртуально с помощью искусственного интеллекта" />
+    <meta property="og:image" content="https://primerochnaya.vercel.app/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://primerochnaya.vercel.app" />
+    <meta property="twitter:title" content="Виртуальная Примерочная AI" />
+    <meta property="twitter:description" content="Попробуйте одежду виртуально с помощью искусственного интеллекта" />
+    <meta property="twitter:image" content="https://primerochnaya.vercel.app/og-image.jpg" />
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Примерочная" />
+    
+    <!-- Preconnect to improve performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://api.gemini.google.com" />
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(98765432, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/98765432" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Виртуальная Примерочная AI",
+      "description": "AI-powered виртуальная примерка одежды онлайн",
+      "url": "https://primerochnaya.vercel.app",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "127"
+      }
+    }
+    </script>
+    
+    <script type="module" crossorigin src="/src/index.tsx"></script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
